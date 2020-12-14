@@ -6,6 +6,9 @@ var message = document.getElementById("message");
 var pnom = document.getElementById("pnom");
 var pemail = document.getElementById("pemail");
 var pnumero = document.getElementById("pnumero");
+var pbutton = document.getElementById("pbutton");
+
+var button = document.getElementById("B1");
 
 nom.addEventListener("keypress", message1)
 function message1()
@@ -26,7 +29,7 @@ function message1()
 email.addEventListener("keypress", message2)
 function message2()
 {
-    var condition=test(email.value);
+    var condition=/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9_.-]+\.[a-z]{2,3}$/.test(email.value);
     if(condition==false)
     {
         pemail.innerHTML="veuillez renseigner des donnés justes";
@@ -38,3 +41,26 @@ function message2()
         pemail.innerHTML="";
     }
 }
+
+numero.addEventListener("keyup", message3)
+function message3()
+{
+    var condition=/^[0-9]{2}( ?[0-9]{2}){3}$/.test(numero.value);
+    if(condition==false)
+    {
+        pnumero.innerHTML="veuillez renseigner des donnés justes";
+        pnumero.style.color="red";
+        pnumero.style.fontSize="0.8em";
+    }
+    else
+    {
+        pnumero.innerHTML="";
+    }
+}
+
+button.addEventListener("click",message4)
+function message4()
+{
+    pbutton.innerHTML="Message envoyé";
+}
+
