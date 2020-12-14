@@ -25,6 +25,7 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="contact.css">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -116,16 +117,19 @@
                     <form class="main_form">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                <input class="form-control" placeholder="Nom" type="text" name="Your Name">
+                            <input class="form-control" id="nom" placeholder="Nom" type="text" name="Your Name" value="">
+                            <p id="pnom"></p>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                <input class="form-control" placeholder="Email" type="text" name="Email">
+                                <input class="form-control" id="email" placeholder="Email" type="text" name="Email" value="">
+                                <p id="pemail"></p>
                             </div>
                             <div class=" col-md-12">
-                                <input class="form-control" placeholder="Numero de téléphone" type="text" name="Phone">
+                                <input class="form-control" id="numero" placeholder="Numero de téléphone" type="text" name="Phone" value="">
+                                <p id="pnumero"></p>
                             </div>
                             <div class="col-md-12">
-                                <textarea class="Message" placeholder="Message"></textarea>
+                                <textarea class="Message" id="message" placeholder="Message"></textarea>
                             </div>
                             <div class=" col-md-12">
                                 <button class="send">Envoyer</button>
@@ -227,5 +231,6 @@
          });
          
       </script> 
+      <script src="contact.js"></script>
    </body>
 </html>
