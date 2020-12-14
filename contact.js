@@ -26,7 +26,7 @@ function message1()
 email.addEventListener("keypress", message2)
 function message2()
 {
-    var condition=.test(email.value);
+    var condition=test(email.value);
     if(condition==false)
     {
         pemail.innerHTML="veuillez renseigner des donnés justes";
