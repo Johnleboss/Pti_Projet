@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="recharger">Recharger la page</button>
+    <button id="changer">Changer</button>
+    <p></p>
+
+    <script>
+        var para = document.querySelector("p");
+        var rechargement = document.getElementById("recharger");
+        var changement = document.getElementById("changer");
+
+        rechargement.addEventListener("click", recharge)
+        function recharge()
+        {
+            location.reload()
+        }
+
+        changement.addEventListener("click", change)
+        function change()
+        {
+            location.assign("http://127.0.0.1:5500/text.html");
+        }
+    </script>
+</body>
+</html>
