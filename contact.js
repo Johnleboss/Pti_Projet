@@ -10,7 +10,7 @@ var pbutton = document.getElementById("pbutton");
 
 var button = document.getElementById("B1");
 
-nom.addEventListener("keypress", message1)
+nom.addEventListener("keyup", message1)
 function message1()
 {
     var condition=/^([A-Za-z ])+$/.test(nom.value);
@@ -26,7 +26,7 @@ function message1()
     }
 }
 
-email.addEventListener("keypress", message2)
+email.addEventListener("keyup", message2)
 function message2()
 {
     var condition=/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9_.-]+\.[a-z]{2,3}$/.test(email.value);
