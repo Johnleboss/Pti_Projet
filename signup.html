@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="css/signup.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup</title>
@@ -15,7 +15,7 @@
               <div class="pannel_header">
 
                 <div class="pannel_logo">
-                    <img src="icon/service5.png" alt="logo" class="logo" width="50" height="70">
+                    <img src="images/logo.png" alt="logo" class="logo" width="50" height="70">
                 </div>
               </div>
                  <div class="welcomme_text"> <h1>BIENVENUE</h1>
@@ -32,19 +32,33 @@
                   </h1>
               <!--content--> 
               <div class="connexion_methode">
+                  <div class="cnx_google">
+
+                  </div>
+                  <div class="cnx_facebook"></div>
                 <div class="form_container">
                     <form action="" class="login_form" id="login_form" method="POST" >
                         <div class="imput_group">
                             <div class="icon">
-    
+                                <i class="fas fa-envelope"></i>
                             </div>
-                           <input type="email", class="email" id="email" placeholder="email" name="email">
+                         <div class="input">
+                            <input type="email", class="email" id="email" placeholder="email" name="email">
+                         </div>
                         </div>
                         <div class="imput_group">
                             <div class="icon">
-    
+                               <i class="fas fa-clock"></i>
                             </div>
-                            <input type="password", class="password" id="email" placeholder="password" name="password">
+                            <div class="input">
+                                <input type="password", class="password" id="password" placeholder="password" name="password">
+                            </div>
+                        </div>
+                        <div class="forgot_password_container">
+                             <button class="mots_depass_oublié" id="mots_depass_oublié">Mots de passe oublié</button>
+                        </div>
+                        <div class="input_submit">
+                           <input type="submit" value="Se connecter" id="submit">
                         </div>
                     </form>
                 </div>
