@@ -70,14 +70,32 @@
     
     <header id="header-part">
        
-        
+        <div class="header-top d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="header-contact text-lg-left text-center">
+                            <ul>
+                                <li><img src="images/all-icon/map.png" alt="icon"><span>Lomé-Togo</span></li>
+                                <li><img src="images/all-icon/email.png" alt="icon"><span>bilioTogo@gmail.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header-opening-time text-lg-right text-center">
+                            <p>Disponible 24h/24</p>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header top -->
         
         <div class="header-logo-support pt-30 pb-30">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
                         <div class="logo">
-                            <a href="acueil.html">
+                            <a href="index-2.html">
                                 <img src="images/logo.png" alt="Logo">
                             </a>
                         </div>
@@ -85,10 +103,17 @@
                     <div class="col-lg-8 col-md-8">
                         <div class="support-button float-right d-none d-md-block">
                             <div class="support float-left">
-                                
-                                
+                                <div class="icon">
+                                    <img src="images/all-icon/support.png" alt="icon">
+                                </div>
+                                <div class="cont">
+                                    <p>Besoin d'aide appeler nous</p>
+                                    <span>+228 92339927</span>
+                                </div>
                             </div>
-                           
+                            <div class="button float-left">
+                                <a href="signup.html" class="main-btn">Commencer maintenant</a>
+                            </div>
                         </div>
                     </div>
                 </div> <!-- row -->
@@ -109,60 +134,34 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="active" href="acueil.html">acueil</a>
-                                    </li>
-                                    
-                                    <li class="nav-item">
-                                        <a href="Apropos.html">A propos</a>
+                                        <a class="active" href="acueil.html">Acceuil</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="courses.html">Courses</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="courses.html">Courses</a></li>
-                                            <li><a href="courses-singel.html">Course Singel</a></li>
-                                        </ul>
+                                        <a href="Apropos.html">A Propos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="events.html">Events</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="events.html">Events</a></li>
-                                            <li><a href="events-singel.html">Event Singel</a></li>
-                                        </ul>
+                                        <a href="events.html">Evènements</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="teachers.html">Our teachers</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="teachers.html">teachers</a></li>
-                                            <li><a href="teachers-singel.html">teacher Singel</a></li>
-                                        </ul>
+                                        <a href="teachers.html">Nos Partenaires</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="blog.html">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-singel.html">Blog Singel</a></li>
-                                        </ul>
+                                        <a href="shop.html">Bibliothèques</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="shop.html">Shop</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="shop-singel.html">Shop Singel</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="contact.html">Contact</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="contact-2.html">Contact Us 2</a></li>
-                                        </ul>
+                                        <a href="contact-2.html">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </nav> <!-- nav -->
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-3 col-4">
-                        
+                        <div class="right-icon text-right">
+                            <ul>
+                                <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i><span>0</span></a></li>
+                            </ul>
+                        </div> <!-- right icon -->
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
@@ -235,6 +234,7 @@
                     </div>  <!-- about imag -->
                 </div> 
             </div> <!-- row -->
+            
             <div class="about-items pt-60">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 col-sm-10">
@@ -493,43 +493,54 @@
                             <div class="logo">
                                 <a href="#"><img src="images/logo-2.png" alt="Logo"></a>
                             </div>
-                            <p>
-                                Biblio est un site web qui accompagne tout ceux qui sont passionnés de lecture. <br>
-                                Il met à la disposition de ses visiteurs, des oeuvres écrites de tout genre ( romans, pièces de théâtre, journaux, ....).
-                           
+                            <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
+                            <ul class="mt-20">
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
                         </div> <!-- footer about -->
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer-link mt-40">
                             <div class="footer-title pb-25">
-                                <h6>Site</h6>
+                                <h6>Sitemap</h6>
                             </div>
                             <ul>
-                                <li><a href="acueil.html"><i class="fa fa-angle-right"></i>Acueil</a></li>
-                                <li><a href="Apropos.html"><i class="fa fa-angle-right"></i>A propos</a></li>
+                                <li><a href="index-2.html"><i class="fa fa-angle-right"></i>Home</a></li>
+                                <li><a href="about.html"><i class="fa fa-angle-right"></i>About us</a></li>
                                 <li><a href="courses.html"><i class="fa fa-angle-right"></i>Courses</a></li>
                                 <li><a href="blog.html"><i class="fa fa-angle-right"></i>News</a></li>
                                 <li><a href="events.html"><i class="fa fa-angle-right"></i>Event</a></li>
                             </ul>
-
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Gallery</a></li>
+                                <li><a href="shop.html"><i class="fa fa-angle-right"></i>Shop</a></li>
+                                <li><a href="teachers.html"><i class="fa fa-angle-right"></i>Teachers</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
+                                <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact</a></li>
+                            </ul>
                         </div> <!-- footer link -->
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="footer-link support mt-40">
                             <div class="footer-title pb-25">
-                                <h6>Partenaires</h6>
+                                <h6>Support</h6>
                             </div>
                             <ul>
-                                <li><a href="">PROMOTIC</a></li>
-                                <li><a href="">LIVRE EXPRESS</a></li>
-                                
+                                <li><a href="#"><i class="fa fa-angle-right"></i>FAQS</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Privacy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Policy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Documentation</a></li>
                             </ul>
-                        </div> 
+                        </div> <!-- support -->
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-address mt-40">
                             <div class="footer-title pb-25">
-                                <h6>Nos contacts</h6>
+                                <h6>Contact Us</h6>
                             </div>
                             <ul>
                                 <li>
@@ -537,7 +548,7 @@
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>Lomé-Togo</p>
+                                        <p>143 castle road 517 district, kiyev port south Canada</p>
                                     </div>
                                 </li>
                                 <li>
@@ -545,7 +556,7 @@
                                         <i class="fa fa-phone"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>00228 92 33 99 27 / 96 00 77 22</p>
+                                        <p>+3 123 456 789</p>
                                     </div>
                                 </li>
                                 <li>
@@ -553,7 +564,7 @@
                                         <i class="fa fa-envelope-o"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>biblio@gmail.com</p>
+                                        <p>info@yourmail.com</p>
                                     </div>
                                 </li>
                             </ul>
@@ -568,7 +579,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="copyright text-md-left text-center pt-15">
-                            <p><target="_blank">BIBLIO</p>
+                            <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a> </p>
                         </div>
                     </div>
                     <div class="col-md-4">
